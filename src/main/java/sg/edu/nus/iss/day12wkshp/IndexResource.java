@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping(path = { "/indexresource", "indexresource.html" })
 public class IndexResource {
 
-  @GetMapping(produces = { "tesx/html" })
+  @GetMapping(produces = { "text/html" })
   public String index(Model model) {
     return "indexresource";
   }
