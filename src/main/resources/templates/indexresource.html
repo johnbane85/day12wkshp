@@ -11,7 +11,19 @@
 
     <h2>The current time is <span data-th-text="${currTime}"></span></h2>
 
-    <div data-th-if="${currHour le 12}">Good Morning!</div>
-    <div data-th-unless="${currHour le 12}">Good Afternoon!</div>
+    <div data-th-if="${currHour le 12}">
+      Good Morning! <br />
+      <img
+        src="C:\Users\junyu\src\day12wkshp\src\main\resources\static\images\sunrise-teletubbies.gif"
+        alt="sunrise"
+      />
+    </div>
+    <div data-th-unless="${currHour le 12}">
+      Good Afternoon! <br />
+      <img
+        src="C:\Users\junyu\src\day12wkshp\src\main\resources\static\images\sunset-teletubbies.gif"
+        alt="sunset"
+      />
+    </div>
   </body>
 </html>
