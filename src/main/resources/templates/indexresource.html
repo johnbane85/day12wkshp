@@ -14,7 +14,7 @@
     <div data-th-if="${currHour le 11}">
       Good Morning! <br />
       <img
-        src="https://c.tenor.com/O5as23V0QaMAAAAC/baby-sun-teletubbies.gif"
+        th:src="@{${'/images/sunrise-teletubbies.gif'}}"
         alt="sunrise"
         height="300px"
         width="400px"
@@ -23,7 +23,7 @@
     <div data-th-unless="${currHour le 11}">
       Good Afternoon! <br />
       <img
-        src="https://c.tenor.com/8GQ-YzwcH-AAAAAM/sun-teletubbies.gif"
+        th:src="@{${'/images/sunset-teletubbies.gif'}}"
         alt="sunset"
         height="300px"
         width="400px"
