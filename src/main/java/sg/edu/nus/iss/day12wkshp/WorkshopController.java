@@ -33,10 +33,10 @@ public class WorkshopController {
       }
     }
 
-    // for (int i = 0; i < lstInt.size(); i++) {
-    // System.out.print("==> " + lstInt.get(i));
-    // System.out.println();
-    // }
+    for (int i = 0; i < lstInt.size(); i++) {
+      System.out.print("==> " + lstInt.get(i));
+      System.out.println();
+    }
 
     model.addAttribute("numbers", lstInt);
 
